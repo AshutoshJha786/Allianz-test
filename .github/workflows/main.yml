@@ -12,6 +12,6 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-            --build-arg DD_ACCOUNT_ID=${{ secrets.PROD_ACCOUNT }} \
-            --build-arg DD_CLIENT_TOKEN=${{ secrets.PROD_TOKEN }} \
+            --build-arg DD_ACCOUNT_ID=${{ secrets.PROD_DD_ACCOUNT_ID }} \
+            --build-arg DD_CLIENT_TOKEN=${{ secrets.PROD_DD_CLIENT_TOKEN }} \
             -t your-image-name .
