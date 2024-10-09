@@ -22,7 +22,7 @@ ENV REACT_APP_DD_ACCOUNT_ID=${DD_ACCOUNT_ID}
 ENV REACT_APP_DD_CLIENT_TOKEN=${DD_CLIENT_TOKEN}
 
 # Print the environment variables for debugging
-RUN echo "Building with Account ID: ${REACT_APP_DD_ACCOUNT_ID} and Client Token: ${REACT_APP_DD_CLIENT_TOKEN}"
+RUN echo "Build with Account ID: ${REACT_APP_DD_ACCOUNT_ID} and Client Token: ${REACT_APP_DD_CLIENT_TOKEN}"
 
 # # Build the application
 # RUN npm run build
